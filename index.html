@@ -4,14 +4,73 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>eCommerce site</title>
-		<link rel="stylesheet" href="./styles/global.css" />
+		<title>eCommerce - website</title>
+		<link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 		<link rel="stylesheet" href="./assets/lib/bootstrap-5.1/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick.css">
+		<link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick-theme.css">
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/home.css">
 
 	</head>
-	<body class="bg-info">
-		
+	<body>
+		<header>
+			<!-- main navbar -->
+			<nav class="main-nav">
+				<div class="links">
+					<a href="#" class="slider-logo"><i class="fas fa-sliders-h"></i></a>
+					<a href="#">Home</a>
+					<a href="#">Shop</a>
+					<a href="#">Pages</a>
+					<a href="#">Contact Us</a>
+				</div>
+				<div class="brand">
+					<a href="#" class="me-5">Fortune.</a>
+				</div>
+				<div class="menus">
+					<a href="#">Login</a>
+					<span> | </span>
+					<a href="#"><i class="fas fa-search"></i></a>
+					<a href="#"><i class="far fa-heart"></i></a>
+					<a href="#"><i class="fas fa-shopping-bag"></i></a>
+				</div>
+			</nav>
+			<!-- intro -->
+			<div class="container-fluid">
+				<div class="row ">
+					<div class="col-xl-6 col-sm-12 info-section">
+						<div class="single-item">
+							<!-- slider Contents -->
+							<div class="into-box">
+								<div class="discount">Up to 30% off</div>
+								<div class="intro-product-name">Minimal Lighting Nordic</div>
+								<div class="description">Spendisse got minima uas enim sit ipsum nascetur, platea netus proident scout</div>
+								<button class="shop-btn">Shop Now</button>
+							</div>
+							<!-- slider Contents -->
+							<div class="into-box">
+								<div class="discount">Maximum 90% off</div>
+								<div class="intro-product-name">Minimal Lighting Nordic</div>
+								<div class="description">Spendisse got minima uas enim sit ipsum nascetur, platea netus proident scout</div>
+								<button class="shop-btn">Shop Now</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-sm-12 product-section ">
+						<div class="fade-effect overflow-hidden">
+							<img class="intro-img" src="./assets/images/home-one-hero-slide-img-1.png" alt="chair">
+							<img class="intro-img slider-content-2" src="./assets/images/home-one-hero-slide-img-2.png" alt="chair">
+						</div>
+						<div class="background"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<script src="./assets/lib/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
 		<script src="./assets/lib/bootstrap-5.1/bootstrap.bundle.min.js"></script>
+		<script src="./assets/lib/slick-1.8.1/slick/slick.min.js"></script>
+		<script src="./scripts/slick.js"></script>
 	</body>
 </html>
