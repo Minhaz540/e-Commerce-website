@@ -5,7 +5,6 @@
 .intro-img {
 	position: absolute;
 	width: 560px !important;
-	z-index: 999;
 }
 .background {
 	width: 195px;

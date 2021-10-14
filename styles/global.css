@@ -12,7 +12,9 @@
     --default-color: #303030;
     --dark-color: #000000;
     --golden-color: #B9B288;
+    --golden-light: #ecda713b;
     --gray-light: #919191;
+    --gray-color: #b6a9a9;
 }
 body {
     scroll-behavior: smooth;
@@ -31,7 +33,7 @@ header {
     align-items: center;
     padding: 25px 30px;
     color: var(--default-color);
-    background-color: var(--main-bg-light);
+    background-color: var(--main-bg-dark);
 }
 .links {
     font-size: 16px;
@@ -60,4 +62,32 @@ header {
 }
 .links a:hover, .menus a:hover {
     color: var(--golden-color);
+}
+/* --------------navigation effect----------- */
+.sticky-css {
+    width: 100%;
+    position: fixed;
+    background: var(--main-bg-light);
+    animation-name: animationFade;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    z-index: 999;
+}
+@keyframes animationFade {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+        -moz-transform: translate3d(0, -100%, 0);
+        -ms-transform: translate3d(0, -100%, 0);
+        -o-transform: translate3d(0, -100%, 0);
+    } 
+    to {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+    }
 }
