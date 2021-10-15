@@ -15,6 +15,8 @@
     --golden-light: #ecda713b;
     --gray-light: #919191;
     --gray-color: #b6a9a9;
+    --pink-color: #e5a3cb;
+    --light-color: #C5C5C5;
 }
 body {
     scroll-behavior: smooth;
@@ -34,6 +36,7 @@ header {
     padding: 25px 30px;
     color: var(--default-color);
     background-color: var(--main-bg-dark);
+    z-index: 999;
 }
 .links {
     font-size: 16px;
@@ -44,6 +47,48 @@ header {
 }
 .links .slider-logo {
     font-size: 19px;
+}
+.shop-link {
+    display: inline-block;
+    position: relative;
+}
+.expand-menu {
+    position: absolute;
+    display: flex;
+    width: 160px;
+    font-size: 15px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 17px;
+    top: 65px;
+    left: 0;
+    background-color: var(--dark-color);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.shop-link:hover .expand-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 40px;
+}
+.expand-menu::before {
+    position: absolute;
+    top: -12px;
+    left: 17px;
+    content: "";
+    height: 13px;
+    width: 36px;
+    clip-path: polygon(50% 0%,0% 100%,100% 100%);
+    background-color: black;
+}
+.expand-menu a {
+    color: var(--dark-light);
 }
 .brand {
     font-size: 35px;
@@ -62,6 +107,81 @@ header {
 }
 .links a:hover, .menus a:hover {
     color: var(--golden-color);
+}
+/* search bar wrapper */
+.search-bar-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #000000d3;
+    z-index: 990;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.search-option {
+    position: relative;
+    color: var(--dark-light);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.search-option span {
+    font-size: 50px;
+    font-weight: 200;
+}
+.search-input input {
+    width: 600px;
+    padding: 14px 16px;
+    outline: none;
+    border: none;
+}
+.search-input button {
+    color: var(--dark-light);
+    background-color: var(--golden-color);
+    border: 1px solid transparent;
+    height: 52px;
+    padding: 0px 49px;
+    margin-left: -6px;
+}
+.cls-btn {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.cls-btn i {
+    font-size: 43px;
+}
+.cls-btn:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.search-bar-wrapper-hide {
+    width: 100%;
+    position: fixed;
+    top: -700px;
+    z-index: 990;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 /* --------------navigation effect----------- */
 .sticky-css {

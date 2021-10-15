@@ -31,15 +31,9 @@
     display: inline-block;
     vertical-align: top;
     background: #fff;
-    border-top: .5rem solid currentColor;
     border-radius: 2px;
     margin-bottom: 1rem;
     position: relative;
-}
-.mix:before {
-    content: '';
-    display: inline-block;
-    padding-top: 56.25%;
 }
 .best-product {
     font-weight: 500;
@@ -117,6 +111,22 @@
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
 }
+.new-available {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    background-color: var(--dark-color);
+    padding: 12px 4px;
+    color: var(--main-bg-light);
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg)
+}
 .review {
     display: flex;
     flex-direction: row;
@@ -148,6 +158,9 @@
 }
 .golden-block {
     background-color: var(--golden-color);
+}
+.pink-block {
+    background-color: var(--pink-color);
 }
 /* Grid Breakpoints*/
 /* 1 Columns */

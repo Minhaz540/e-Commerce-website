@@ -23,8 +23,22 @@
 				<div class="links">
 					<a href="#" class="slider-logo"><i class="fas fa-sliders-h"></i></a>
 					<a href="#">Home</a>
-					<a href="#">Shop</a>
-					<a href="#">Pages</a>
+					<div class="shop-link">
+						<a href="#" class="sub-menu">Shop</a>
+						<div class="expand-menu">
+							<a href="#">Single Shop</a>
+							<a href="#">Details Shop</a>
+						</div>
+					</div>
+					<div class="shop-link">
+						<a href="#" class="sub-menu">Pages</a>
+						<div class="expand-menu">
+							<a href="#">Login</a>
+							<a href="#">Cart</a>
+							<a href="#">Checkout</a>
+							<a href="#">404 page</a>
+						</div>
+					</div>					
 					<a href="#">Contact Us</a>
 				</div>
 				<div class="brand">
@@ -33,11 +47,22 @@
 				<div class="menus">
 					<a href="#">Login</a>
 					<span> | </span>
-					<a href="#"><i class="fas fa-search"></i></a>
+					<a href="#" id="searching"><i class="fas fa-search"></i></a>
 					<a href="#"><i class="far fa-heart"></i></a>
 					<a href="#"><i class="fas fa-shopping-bag"></i></a>
 				</div>
+				
 			</nav>
+			<div class="search-bar-wrapper-hide">
+				<div class="search-option">
+					<span>Search</span>
+					<span class="cls-btn"><i class="fas fa-times"></i></span>
+					<form class="search-input">
+						<input type="search" name="search" id="search-box" placeholder="Search text">
+						<button type="submit">Search</button>
+					</form>
+				</div>
+			</div>
 			<!-- intro -->
 			<div class="container-fluid">
 				<div class="row ">
@@ -124,14 +149,15 @@
 				<div class="controls">
 					<span class="best-product">Best products</span>
 					<div class="mix-controler">
-						<span class="control" data-filter="all">BEST SELLERS</span>
 						<span class="control" data-sort="default:asc">FEATURED</span>
+						<span class="control" data-sort="random">BEST SELLERS</span>
 						<span class="control" data-sort="default:desc">TOP PRODUCTS</span>
 					</div>
 					<a href="#">See All <i class="fas fa-chevron-right"></i></a>
 				</div>
 				<div class="mix-container">
 					<div class="mix">
+						<!-- first product -->
 						<div class="product-img">
 							<img src="./assets/images/shope-two-prodict-img-1.png" alt="product-1">
 							<span class="discount-rate">60% Off</span>
@@ -154,7 +180,7 @@
 								</div>
 							</div>
 							<div class="product-name">
-								<a href="#">Pendent light roof minimal</a>
+								<a href="#">Pendent light chair</a>
 							</div>
 							<div class="product-price">
 								$55.00 <del>$120.00</del> 
@@ -166,13 +192,254 @@
 							</div>
 						</div>
 					</div>
-					<div class="mix"></div>
-					<div class="mix"></div>
-					<div class="mix"></div>
-					<div class="mix"></div>
-					<div class="mix"></div>
-					<div class="mix"></div>
-					<div class="mix"></div>
+					<!-- second product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-2.png" alt="product-2">
+							<span class="new-available">New</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star-half-alt"></span>
+									<span>( 33 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Apple black headphone</a>
+							</div>
+							<div class="product-price">
+								$50.00 <del>$100.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- third product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-3.png" alt="product-3">
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="far fa-star"></span>
+									<span>( 53 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Apple music setup</a>
+							</div>
+							<div class="product-price">
+								$80.00 <del>$140.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="pink-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- fourth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-4.png" alt="product-4">
+							<span class="discount-rate">60% Off</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span>( 45 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent light roof minimal</a>
+							</div>
+							<div class="product-price">
+								$30.00 <del>$90.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- fifth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-5.png" alt="product-5">
+							<span class="discount-rate">50% Off</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star-half-alt"></span>
+									<span>( 145 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent golden roof minimal</a>
+							</div>
+							<div class="product-price">
+								$45.00 <del>$90.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- sixth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-6.png" alt="product-6">
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span>( 24 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent golden watch</a>
+							</div>
+							<div class="product-price">
+								$130.00 <del>$190.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- seventh product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-7.png" alt="product-7">
+							<span class="discount-rate">45% Off</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star-half-alt"></span>
+									<span>( 62 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">APL security camera</a>
+							</div>
+							<div class="product-price">
+								$160.00 <del>$290.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- eighth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-8.png" alt="product-8">
+							<span class="new-available">New</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="far fa-star"></span>
+									<span>( 58 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent office chair</a>
+							</div>
+							<div class="product-price">
+								$80.00 <del>$109.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="pink-block"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
