@@ -14,9 +14,14 @@
 		<link rel="stylesheet" href="./styles/home.css" />
 		<link rel="stylesheet" href="./styles/discountProduct.css">
 		<link rel="stylesheet" href="./styles/bestProduct.css">
-
+		<link rel="stylesheet" href="./styles/howWeWork.css">
+		<link rel="stylesheet" href="./styles/featuredProduct.css">
+		<link rel="stylesheet" href="./styles/favoriteOffers.css">
 	</head>
 	<body>
+		<a href="#" class="goTop">
+			<span class="fas fa-arrow-up"></span>
+		</a>
 		<header>
 			<!-- main navbar -->
 			<nav class="main-nav">
@@ -72,7 +77,7 @@
 							<div class="into-box">
 								<div class="discount">Up to 30% off</div>
 								<div class="intro-product-name">Minimal Lighting Nordic</div>
-								<div class="description">Spendisse got minima uas enim sit ipsum nascetur, platea netus proident scout</div>
+								<div class="description" id="pin">Spendisse got minima uas enim sit ipsum nascetur, platea netus proident scout</div>
 								<button class="shop-btn">Shop Now</button>
 							</div>
 							<!-- slider Contents -->
@@ -149,8 +154,8 @@
 				<div class="controls">
 					<span class="best-product">Best products</span>
 					<div class="mix-controler">
-						<span class="control" data-sort="default:asc">FEATURED</span>
-						<span class="control" data-sort="random">BEST SELLERS</span>
+						<span class="control" data-sort="default:asc">BEST SELLERS</span>
+						<span class="control" data-sort="random">FEATURED</span>
 						<span class="control" data-sort="default:desc">TOP PRODUCTS</span>
 					</div>
 					<a href="#">See All <i class="fas fa-chevron-right"></i></a>
@@ -443,6 +448,145 @@
 				</div>
 			</div>
 		</section>
+		<!-- how we work -->
+		<section class="how-we-work">
+			<div class="container-body">
+				<div class="row">
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="work-partition">
+							<span>UP TO 30% OFF</span> 
+							<span>How we work</span> 
+							<span>Aces eius fusce ab in maiores mus <br>mollis Aliquet sempero.</span> 
+							<a href="#">SHOP NOW</a>
+						</div> 
+					</div>
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="policy">
+							<div class="policy-icon">
+								<i class="fas fa-unlock-alt"></i>
+							</div>
+							<span class="policy-naming">
+								Free shipping
+							</span>
+							<div class="policy-details">
+								Aces eius fusce ab in maiores mus <br>mollis! Aliquet
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="policy">
+							<div class="policy-icon">
+								<i class="fas fa-redo-alt"></i>
+							</div>
+							<span class="policy-naming">
+								Return policy 10 days
+							</span>
+							<div class="policy-details">
+								Aces eius fusce ab in maiores mus <br>mollis! Aliquet
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="policy">
+							<div class="policy-icon">
+								<i class="fas fa-globe-americas"></i>
+							</div>
+							<span class="policy-naming">
+								World wide services
+							</span>
+							<div class="policy-details">
+								Aces eius fusce ab in maiores mus <br>mollis! Aliquet
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- featured product -->
+		<section class="container-fluid">
+			<div class="container-body">
+				<div class="featured-heading">
+					<span>Featured Product</span>
+					<span>Robotism conubialaoreet pellentesque quod olorem nibh eius Facilis voluptate sequoya</span>
+				</div>
+				<div class="featured-body">
+					<div class="row">
+						<div class="col-xl-4">
+							<!-- partition for 2 images -->
+							<div class="row featured-row">
+								<div class="col-12">
+									<div class="featured-img">
+										<img src="./assets/images/home-one-featured-img-1.png" alt="featured-img-1">
+										<div class="discount-offer">60% Off</div>
+										<div class="types">
+											<span>Decoration</span>
+											<span>Pendent white light</span>
+										</div>
+										<div class="product-price">$36.00</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="featured-img">
+										<img src="./assets/images/home-one-featured-img-2.png" alt="featured-img-2">
+										<div class="discount-offer">60% Off</div>
+										<div class="types">
+											<span>Decoration</span>
+											<span>Pendent sun light</span>
+										</div>
+										<div class="product-price">$46.00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<div class="featured-img">
+								<img src="./assets/images/home-one-featured-img-3.png" alt="featured-img-3">
+								<div class="discount-offer">30% Off</div>
+								<div class="types">
+									<span>Decoration</span>
+									<span>Storm long light</span>
+								</div>
+								<div class="product-price">$336.00</div>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<!-- partition for 2 images -->
+							<div class="row featured-row">
+								<div class="col-12">
+									<div class="featured-img">
+										<img src="./assets/images/home-one-featured-img-4.png" alt="featured-img-4">
+										<div class="discount-offer">60% Off</div>
+										<div class="types">
+											<span>Hand watch</span>
+											<span>SPL hand watch</span>
+										</div>
+										<div class="product-price">$136.00</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="featured-img">
+										<img src="./assets/images/home-one-featured-img-5.png" alt="featured-img-5">
+										<div class="discount-offer">60% Off</div>
+										<div class="types">
+											<span>Decoration</span>
+											<span>Kingdom light</span>
+										</div>
+										<div class="product-price">$246.00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- favorite offers -->
+		<section class="container-fluid">
+			<div class="container-body">
+
+			</div>
+		</section>
+
 
 		<script src="./assets/lib/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
 		<script src="./assets/lib/bootstrap-5.1/bootstrap.bundle.min.js"></script>
