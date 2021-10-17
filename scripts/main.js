@@ -22,12 +22,12 @@ $(function () {
 });
 
 // mixitup
-var containerEl = document.querySelector(".mix-container");
-var mixer = mixitup(containerEl);
+let containerEl = document.querySelector(".mix-container");
+let mixer = mixitup(containerEl);
 
-var toTopbtn = document.getElementsByClassName("goTop")[0];
-var pin = document.getElementById("pin");
-var startingPoint = pin.offsetTop;
+let toTopbtn = document.getElementsByClassName("goTop")[0];
+let pin = document.getElementById("pin");
+let startingPoint = pin.offsetTop;
 function backTotop() {
 	if (window.pageYOffset <= startingPoint) {
 		toTopbtn.classList.add("goTop-hidden");
@@ -41,3 +41,15 @@ function backTotop() {
 window.onscroll = function () {
 	backTotop();
 };
+
+// news latter
+const newsLetter = document.querySelector(".newsLatter-wrapper");
+const clsBtnNewsLatter = document.querySelector(".cls-btn-newsletter");
+
+clsBtnNewsLatter.addEventListener('click', function() {
+	newsLetter.classList.add("newsLatter-hide");
+})
+
+setTimeout(function() {
+	newsLetter.classList.remove("hidden-wrapper");
+}, 5000);
