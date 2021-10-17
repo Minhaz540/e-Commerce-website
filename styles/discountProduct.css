@@ -40,7 +40,7 @@
 }
 .slide-from-top::after {
 	content: "";
-	background-color: var(--golden-light);
+	background-color: var(--golden-dark);
 	position: absolute;
 	display: block;
 	left: 0;

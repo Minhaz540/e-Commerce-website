@@ -10,7 +10,6 @@
 	display: none;
 	width: 100%;
 	-webkit-tap-highlight-color: transparent;
-	/* position relative and z-index fix webkit rendering fonts issue */
 	position: relative;
 	z-index: 1;
 }
@@ -18,7 +17,6 @@
 	position: relative;
 	-ms-touch-action: pan-Y;
 	touch-action: manipulation;
-	/* fix firefox animation glitch */
 }
 .owl-carousel .owl-stage:after {
 	content: ".";
@@ -31,7 +29,6 @@
 .owl-carousel .owl-stage-outer {
 	position: relative;
 	overflow: hidden;
-	/* fix for flashing background */
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
 .owl-carousel .owl-wrapper,
@@ -72,11 +69,47 @@
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel button.owl-dot {
-	background: none;
-	color: inherit;
+	color: var(--golden-color);
 	border: none;
 	padding: 0 !important;
 	font: inherit;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+	border: 1px solid var(--golden-color);
+	background-color: transparent;
+	width: 40px;
+	height: 40px;
+	font-size: 35px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.owl-prev, .owl-next {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.owl-prev {
+    top: 47%;
+    left: -19px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.owl-next {
+	top: 47%;
+	right: -19px;
+	transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 .owl-carousel.owl-loaded {
 	display: block;

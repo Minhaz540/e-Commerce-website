@@ -19,6 +19,27 @@ $(function () {
 			.removeClass("search-bar-wrapper")
 			.addClass("search-bar-wrapper-hide");
 	});
+	// owl carousel
+	$(".owl-carousel").owlCarousel({
+		loop: true,
+		margin: 24,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1,
+				nav: true,
+			},
+			600: {
+				items: 3,
+				nav: false,
+			},
+			1000: {
+				items: 4,
+				nav: true,
+				loop: true,
+			},
+		},
+	});
 });
 
 // mixitup
@@ -43,13 +64,13 @@ window.onscroll = function () {
 };
 
 // news latter
-const newsLetter = document.querySelector(".newsLatter-wrapper");
-const clsBtnNewsLatter = document.querySelector(".cls-btn-newsletter");
+// const newsLetter = document.querySelector(".newsLatter-wrapper");
+// const clsBtnNewsLatter = document.querySelector(".cls-btn-newsletter");
 
-clsBtnNewsLatter.addEventListener('click', function() {
-	newsLetter.classList.add("newsLatter-hide");
-})
+// clsBtnNewsLatter.addEventListener('click', function() {
+// 	newsLetter.classList.add("newsLatter-hide");
+// })
 
-setTimeout(function() {
-	newsLetter.classList.remove("hidden-wrapper");
-}, 5000);
+// setTimeout(function() {
+// 	newsLetter.classList.remove("hidden-wrapper");
+// }, 5000);
