@@ -20,7 +20,7 @@ $(function () {
 			.addClass("search-bar-wrapper-hide");
 	});
 	// owl carousel
-	$(".owl-carousel").owlCarousel({
+	$(".carousel-1").owlCarousel({
 		loop: true,
 		margin: 24,
 		responsiveClass: true,
@@ -36,6 +36,41 @@ $(function () {
 			1000: {
 				items: 4,
 				nav: true,
+				loop: true,
+			},
+		},
+	});
+	// owl carousel
+	$(".carousel-2").owlCarousel({
+		loop: true,
+		margin: 24,
+		nav: true,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1,
+				
+			},
+			600: {
+				items: 3,
+			},
+			1000: {
+				items: 3,
+				loop: true,
+			},
+		},
+	});
+	$(".carousel-3").owlCarousel({
+		loop: true,
+		nav: true,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1,
+				
+			},
+			1000: {
+				items: 1,
 				loop: true,
 			},
 		},
