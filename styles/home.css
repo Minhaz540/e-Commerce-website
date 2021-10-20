@@ -94,3 +94,10 @@
 .shop-btn:active {
 	top: 2px;
 }
+
+/* responsive part */
+@media (max-width: 1183px) {
+	.info-section {
+		padding-left: 30px;
+	}
+}
