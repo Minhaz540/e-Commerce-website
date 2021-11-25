@@ -11,9 +11,9 @@
 	color: var(--ash-color);
 }
 .support-news-letter {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+	display: flex;
+	justify-content: right;
+	align-items: center;
 }
 .btm-news-form .news-btm-mail {
 	width: 270px;
@@ -26,7 +26,16 @@
 	border-right: none;
 	border-bottom: 1px solid var(--golden-color);
 	margin-left: -5px;
-    color: var(--main-bg-light);
-    width: 145px;
-    font-size: 14px;
+	color: var(--main-bg-light);
+	width: 145px;
+	font-size: 14px;
+}
+@media (max-width: 767px) {
+	.bottom-newsletter-text {
+		text-align: center;
+	}
+	.support-news-letter {
+		padding-top: 30px;
+		justify-content: center;
+	}
 }

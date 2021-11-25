@@ -18,7 +18,7 @@
 .featured-row {
     gap: 24px;
 }
-.featured-img {
+.featured-box {
     position: relative;
 }
 .discount-offer {
@@ -65,15 +65,32 @@
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
 }
-.featured-img:hover .discount-offer {
+.featured-box:hover .discount-offer {
     background-color: var(--golden-color);
 }
-.featured-img:hover .types {
+.featured-box:hover .types {
     position: absolute;
     bottom: 40px;
 }
-.featured-img:hover .product-price {
+.featured-box:hover .product-price {
     bottom: 10px;
     visibility: visible;
     opacity: 1;
+}
+@media (max-width: 1317px){
+    .left-partition .col-12 .featured-img {
+        display: flex;
+        justify-content: right;
+    }
+    .right-partition .col-12 .featured-img {
+        display: flex;
+        justify-content: left;
+    }
+    .single-img-partition {
+        height: 532px;
+        width: 369px;
+    }
+    .row .col-12 .featured-img .featured-box img {
+        width: 300px;
+    }
 }
